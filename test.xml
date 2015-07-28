@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<?xml-stylesheet type="text/xsl" href="cars.xsl" ?>
+
+<cars>
+	<car>
+		<make>Honda</make>
+		<model>Pilot</model>
+		<subModel>EX-L</subModel>
+		<wheels>4</wheels>
+		<color>Silver</color>
+		<type>SUV</type>
+		<location>Garage</location>
+	</car>
+
+	<car>
+		<make>Toyota</make>
+		<model>Prius</model>
+		<subModel>V</subModel>
+		<wheels>4</wheels>
+		<color>Red</color>
+		<type>Hybrid</type>
+		<location>Lot</location>
+	</car>
+
+	<car>
+		<make>Ford</make>
+		<model>Mustang</model>
+		<subModel>Shelby</subModel>
+		<wheels>4</wheels>
+		<color>Black</color>
+		<type>Muscle</type>
+		<location>Track</location>
+		<nickname>Cobra</nickname>
+	</car>
+</cars>
