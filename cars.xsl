@@ -10,7 +10,7 @@
 			<head><title>Cars</title></head>
 
 			<style>
-				.genStyle {padding: 10px; text-align: center;} 
+				.genStyle {padding: 10px; text-align: center;}
 			</style>
 
 			<body>
