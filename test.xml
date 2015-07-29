@@ -11,6 +11,7 @@
 		<color>Silver</color>
 		<type>SUV</type>
 		<location>Garage</location>
+		<number>3</number>
 	</car>
 
 	<car>
@@ -21,6 +22,7 @@
 		<color>Red</color>
 		<type>Hybrid</type>
 		<location>Lot</location>
+		<number>2</number>
 	</car>
 
 	<car>
@@ -32,5 +34,6 @@
 		<type>Muscle</type>
 		<location>Track</location>
 		<nickname>Cobra</nickname>
+		<number>1</number>
 	</car>
 </cars>

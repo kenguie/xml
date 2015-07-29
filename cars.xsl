@@ -30,8 +30,16 @@
 					</tr>
 					
 					<xsl:for-each select="cars/car">
+						<xsl:sort select="make" order="ascending" data-type="text"/>
+						<!-- <xsl:sort select="number" order="ascending" data-type="number"/> -->
+
 						<tr>
-							<td class="genStyle"><xsl:value-of select="make"/></td>
+							<td class="genStyle">
+								<a>
+									<xsl:attribute name="href">http://www.<xsl:value-of select="make"/>.com</xsl:attribute>
+									<xsl:value-of select="make"/>
+								</a>
+							</td>
 							<td class="genStyle"><xsl:value-of select="model"/></td>
 							<td class="genStyle"><xsl:value-of select="subModel"/></td>
 							<td class="genStyle"><xsl:value-of select="color"/></td>
