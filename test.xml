@@ -36,4 +36,37 @@
 		<nickname>Cobra</nickname>
 		<number>1</number>
 	</car>
+
+	<car>
+		<make>Chevy</make>
+		<model>Silverado</model>
+		<subModel>LT</subModel>
+		<wheels>4</wheels>
+		<color>Black</color>
+		<type>Truck</type>
+		<location>Dealership</location>
+		<number>4</number>
+	</car>
+
+	<car>
+		<make>Porsche</make>
+		<model>911</model>
+		<subModel>Targa</subModel>
+		<wheels>4</wheels>
+		<color>Yellow</color>
+		<type>Sports</type>
+		<location>Track</location>
+		<number>5</number>
+	</car>
+
+	<car>
+		<make>Tesla</make>
+		<model>Coupe</model>
+		<subModel>EV</subModel>
+		<wheels>4</wheels>
+		<color>Gray</color>
+		<type>Electric</type>
+		<location>Driveway</location>
+		<number>6</number>
+	</car>
 </cars>

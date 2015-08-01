@@ -31,14 +31,10 @@
 					
 					<xsl:for-each select="cars/car">
 						<xsl:sort select="make" order="ascending" data-type="text"/>
-						<!-- <xsl:sort select="number" order="ascending" data-type="number"/> -->
 
 						<tr>
 							<td class="genStyle">
-								<a>
-									<xsl:attribute name="href">http://www.<xsl:value-of select="make"/>.com</xsl:attribute>
-									<xsl:value-of select="make"/>
-								</a>
+								<xsl:apply-templates select="make"/>
 							</td>
 							<td class="genStyle"><xsl:value-of select="model"/></td>
 							<td class="genStyle"><xsl:value-of select="subModel"/></td>
@@ -58,10 +54,28 @@
 
 				</table>
 
-
 			</body>
 		</html>
 
 
 	</xsl:template>
+
+	<xsl:template match="make">
+		<xsl:choose>
+			<xsl:when test = ". = 'Tesla'">
+				<a>
+					<xsl:attribute name="href">http://www.<xsl:value-of select="translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>motors.com</xsl:attribute>
+					<xsl:value-of select="."/>
+				</a>
+			</xsl:when>
+			<xsl:otherwise>
+				<a>
+					<xsl:attribute name="href">http://www.<xsl:value-of select="translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>.com</xsl:attribute>
+					<xsl:value-of select="."/>
+				</a>
+			</xsl:otherwise>
+		</xsl:choose>
+
+	</xsl:template>
+
 </xsl:stylesheet>
