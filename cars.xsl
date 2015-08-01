@@ -53,11 +53,21 @@
 					</xsl:for-each>
 
 				</table>
+				
+				<div style="border: 1px solid red; border-radius: 5px; padding: 20px; box-sizing: border-box; margin-top: 15px; margin-bottom: 25px;">
+					<h1> History of Manufacturers </h1>
+
+					<xsl:for-each select="cars/car">
+
+						<xsl:sort select="make" order="ascending" data-type="text"/>
+
+							<xsl:apply-templates select="history"/>
+
+					</xsl:for-each>
+				</div>
 
 			</body>
 		</html>
-
-
 	</xsl:template>
 
 	<xsl:template match="make">
@@ -75,7 +85,16 @@
 				</a>
 			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
 
+	<xsl:template match="history">
+		<h3>
+			<xsl:value-of select="../make"/>&#160;
+			<xsl:value-of select="../model"/>&#160;
+			<xsl:value-of select="../subModel"/><br/>
+		</h3>
+		<xsl:value-of select="."/>
+		<br/>
 	</xsl:template>
 
 </xsl:stylesheet>

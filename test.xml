@@ -12,6 +12,9 @@
 		<type>SUV</type>
 		<location>Garage</location>
 		<number>3</number>
+		<history>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+		</history>
 	</car>
 
 	<car>
@@ -23,6 +26,11 @@
 		<type>Hybrid</type>
 		<location>Lot</location>
 		<number>2</number>
+		<history>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi. <para/>
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+		</history>
 	</car>
 
 	<car>
@@ -35,6 +43,13 @@
 		<location>Track</location>
 		<nickname>Cobra</nickname>
 		<number>1</number>
+		<history>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+		</history>
 	</car>
 
 	<car>
@@ -46,6 +61,11 @@
 		<type>Truck</type>
 		<location>Dealership</location>
 		<number>4</number>
+		<history>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+		</history>
 	</car>
 
 	<car>
@@ -57,6 +77,9 @@
 		<type>Sports</type>
 		<location>Track</location>
 		<number>5</number>
+		<history>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+		</history>
 	</car>
 
 	<car>
@@ -68,5 +91,10 @@
 		<type>Electric</type>
 		<location>Driveway</location>
 		<number>6</number>
+		<history>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
+		</history>
 	</car>
 </cars>
