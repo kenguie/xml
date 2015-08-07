@@ -54,7 +54,7 @@
 
 				</table>
 				
-				<div style="border: 1px solid red; border-radius: 5px; padding: 20px; box-sizing: border-box; margin-top: 15px; margin-bottom: 25px;">
+				<div style="border: 1px solid red; border-radius: 5px; padding: 20px; box-sizing: border-box; margin-top: 15px; margin-bottom: 25px; background-color: aliceblue;">
 					<h1> History of Manufacturers </h1>
 
 					<xsl:for-each select="cars/car">
@@ -94,7 +94,11 @@
 			<xsl:value-of select="../subModel"/><br/>
 		</h3>
 		<xsl:value-of select="."/>
-		<br/>
+		<br/><br/>
+		<img>
+			<xsl:attribute name="src"><xsl:value-of select="../picture"/></xsl:attribute>
+      <xsl:attribute name="height">300</xsl:attribute>
+	  </img><br/>
 	</xsl:template>
 
 </xsl:stylesheet>

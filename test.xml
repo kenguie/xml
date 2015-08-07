@@ -12,6 +12,7 @@
 		<type>SUV</type>
 		<location>Garage</location>
 		<number>3</number>
+		<picture>http://media.ed.edmunds-media.com/honda/pilot/2009/ft/2009_honda_pilot_f34_ft_1_600.jpg</picture>
 		<history>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
 		</history>
@@ -26,6 +27,7 @@
 		<type>Hybrid</type>
 		<location>Lot</location>
 		<number>2</number>
+		<picture>http://www.blogcdn.com/www.autoblog.com/media/2012/03/2012-toyota-prius-v-review.jpg</picture>
 		<history>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi. <para/>
 
@@ -43,6 +45,7 @@
 		<location>Track</location>
 		<nickname>Cobra</nickname>
 		<number>1</number>
+		<picture>http://cartype.com/pics/3690/full/ford-mustang-shelby-cobra-gt500kr_fs2.jpg</picture>
 		<history>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
 
@@ -61,6 +64,7 @@
 		<type>Truck</type>
 		<location>Dealership</location>
 		<number>4</number>
+		<picture>http://www.chevrolet.com/content/dam/Chevrolet/northamerica/usa/nscwebsite/en/Home/Vehicles/Trucks%20and%20Vans/2015_Silverado_2500hd/Model_Overview/01_images/2015-chevrolet-silverado-2500hd-heavy-duty-truck-mo-high-country-minor-648x316.jpg</picture>
 		<history>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
 
@@ -77,6 +81,7 @@
 		<type>Sports</type>
 		<location>Track</location>
 		<number>5</number>
+		<picture>http://www.wired.com/wp-content/uploads/2015/01/Porsche-911-Targa-4-GTS.jpg</picture>
 		<history>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
 		</history>
@@ -91,6 +96,7 @@
 		<type>Electric</type>
 		<location>Driveway</location>
 		<number>6</number>
+		<picture>http://www.blogcdn.com/www.autoblog.com/media/2012/09/01-2012-tesla-model-s-fd-1347336745.jpg</picture>
 		<history>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum asperiores, id ab, obcaecati tenetur voluptates, excepturi provident saepe veniam labore mollitia architecto quidem voluptatibus qui dolore quod repudiandae cum ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero temporibus a quaerat magnam, asperiores architecto molestias doloremque eos itaque veritatis quo magni minus quas molestiae error enim omnis, illum, sequi.
 
