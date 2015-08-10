@@ -8,10 +8,55 @@
 		
 		<html>
 			<head><title>Cars</title></head>
+			<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 
 			<style>
 				.genStyle {padding: 10px; text-align: center;}  
+
+				#images {
+					position: relative;
+					float: left;
+				}
+
+				#images img {
+					padding-left: 75px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: none;
+					height: 250px;
+					width: 300px;
+				}
 			</style>
+
+			<script type="text/javascript">
+	
+				$(document).ready(function() {
+					var slideNum = 0;
+					var slideCount = 0;
+
+					var slides = $('#images img');
+
+					slides.eq(slideNum).show();
+
+					var sliderTimer = setInterval(function() {
+					
+						slides.eq(slideNum).fadeOut();
+
+						slideNum++;
+
+						if(slideNum >= slides.length) {
+						  slideNum = 0;
+						}
+
+						slides.eq(slideNum).fadeIn(1500, function() {
+							slideCount++;
+						});
+					}, 1500);
+
+				});
+
+			</script>
 
 			<body>
 
@@ -19,42 +64,51 @@
 
 				The <xsl:value-of select="cars/car/make"/> is located in the <xsl:value-of select="cars/car/location"/>.
 				
-				<table border="1" style="border: 5px solid orange; border-radius: 5px;">
-					<tr>
-						<th class="genStyle">Make</th>
-						<th class="genStyle">Model</th>
-						<th class="genStyle">SubModel</th>
-						<th class="genStyle">Color</th>
-						<th class="genStyle">Location</th>
-						<th class="genStyle">Nickname</th>
-					</tr>
-					
-					<xsl:for-each select="cars/car">
-						<xsl:sort select="make" order="ascending" data-type="text"/>
-
+				<div id="topLayer">
+					<table border="1" style="display: inline-block; float: left; border: 5px solid orange; border-radius: 5px; margin-bottom: 40px;">
 						<tr>
-							<td class="genStyle">
-								<xsl:apply-templates select="make"/>
-							</td>
-							<td class="genStyle"><xsl:value-of select="model"/></td>
-							<td class="genStyle"><xsl:value-of select="subModel"/></td>
-							<td class="genStyle"><xsl:value-of select="color"/></td>
-							<td class="genStyle"><xsl:value-of select="location"/></td>
-
-							<xsl:choose>
-								<xsl:when test = "nickname">
-									<td class="genStyle"><xsl:value-of select="nickname"/></td>
-								</xsl:when>
-								<xsl:otherwise>
-									<td class="genStyle">none</td>
-								</xsl:otherwise>
-							</xsl:choose>
+							<th class="genStyle">Make</th>
+							<th class="genStyle">Model</th>
+							<th class="genStyle">SubModel</th>
+							<th class="genStyle">Color</th>
+							<th class="genStyle">Location</th>
+							<th class="genStyle">Nickname</th>
 						</tr>
-					</xsl:for-each>
+						
+						<xsl:for-each select="cars/car">
+							<xsl:sort select="make" order="ascending" data-type="text"/>
 
-				</table>
+							<tr>
+								<td class="genStyle">
+									<xsl:apply-templates select="make"/>
+								</td>
+								<td class="genStyle"><xsl:value-of select="model"/></td>
+								<td class="genStyle"><xsl:value-of select="subModel"/></td>
+								<td class="genStyle"><xsl:value-of select="color"/></td>
+								<td class="genStyle"><xsl:value-of select="location"/></td>
+
+								<xsl:choose>
+									<xsl:when test = "nickname">
+										<td class="genStyle"><xsl:value-of select="nickname"/></td>
+									</xsl:when>
+									<xsl:otherwise>
+										<td class="genStyle">none</td>
+									</xsl:otherwise>
+								</xsl:choose>
+							</tr>
+						</xsl:for-each>
+
+					</table>
+
+					<div id="images">
+						<xsl:for-each select="cars/car">
+							<xsl:sort select="make" order="ascending" data-type="text"/>
+							<xsl:apply-templates select="logo"/>
+						</xsl:for-each>
+					</div>
+				</div>
 				
-				<div style="border: 1px solid red; border-radius: 5px; padding: 20px; box-sizing: border-box; margin-top: 15px; margin-bottom: 25px; background-color: aliceblue;">
+				<div style="clear: both; border: 1px solid red; border-radius: 5px; padding: 20px; margin-bottom: 25px; background-color: aliceblue;">
 					<h1> History of Manufacturers </h1>
 
 					<xsl:for-each select="cars/car">
@@ -64,6 +118,7 @@
 							<xsl:apply-templates select="history"/>
 
 					</xsl:for-each>
+
 				</div>
 
 			</body>
@@ -98,6 +153,14 @@
 		<img>
 			<xsl:attribute name="src"><xsl:value-of select="../picture"/></xsl:attribute>
       <xsl:attribute name="height">300</xsl:attribute>
+	  </img><br/>
+	</xsl:template>
+
+	<xsl:template match="logo">
+		<img>
+			<xsl:attribute name="src"><xsl:value-of select="."/></xsl:attribute>
+      <xsl:attribute name="height">250</xsl:attribute>
+      <xsl:attribute name="width">300</xsl:attribute>
 	  </img><br/>
 	</xsl:template>
 

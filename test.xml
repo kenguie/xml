@@ -5,6 +5,7 @@
 <cars>
 	<car>
 		<make>Honda</make>
+		<logo>http://www.carpict.website/wp-content/uploads/2015/07/honda-logo-png-white-urejmloe0.png</logo>
 		<model>Pilot</model>
 		<subModel>EX-L</subModel>
 		<wheels>4</wheels>
@@ -20,6 +21,7 @@
 
 	<car>
 		<make>Toyota</make>
+		<logo>http://www.logoping.co.uk/blog/wp-content/uploads/2014/10/Toyota-logo.jpg</logo>
 		<model>Prius</model>
 		<subModel>V</subModel>
 		<wheels>4</wheels>
@@ -37,6 +39,7 @@
 
 	<car>
 		<make>Ford</make>
+		<logo>http://tdsmotorsports.net/main/paintshop%20tools/tds%20decals/f/decals/ford-logo.png</logo>
 		<model>Mustang</model>
 		<subModel>Shelby</subModel>
 		<wheels>4</wheels>
@@ -57,6 +60,7 @@
 
 	<car>
 		<make>Chevy</make>
+		<logo>http://img2.wikia.nocookie.net/__cb20141116144915/logopedia/images/f/f4/Chevrolet_logo-2.png</logo>
 		<model>Silverado</model>
 		<subModel>LT</subModel>
 		<wheels>4</wheels>
@@ -74,6 +78,7 @@
 
 	<car>
 		<make>Porsche</make>
+		<logo>https://lh4.googleusercontent.com/-b2wTsQyce5E/UW8iQ7wJ9qI/AAAAAAAAANY/X0LkBiDU18s/w979-h979/porsche%2Blogo.png</logo>
 		<model>911</model>
 		<subModel>Targa</subModel>
 		<wheels>4</wheels>
@@ -89,6 +94,7 @@
 
 	<car>
 		<make>Tesla</make>
+		<logo>http://charlesmilander.com/media/23695120/logox-medium.png</logo>
 		<model>Coupe</model>
 		<subModel>EV</subModel>
 		<wheels>4</wheels>
