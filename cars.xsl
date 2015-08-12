@@ -121,6 +121,13 @@
 
 				</div>
 
+				<div style="border: 2px solid green; border-radius: 5px; padding: 10px;">
+					<xsl:for-each select="cars/car">
+						<xsl:sort select="make" order="ascending" data-type="text"/>
+						<xsl:apply-templates select="color"/>
+					</xsl:for-each>
+				</div>
+
 			</body>
 		</html>
 	</xsl:template>
@@ -162,6 +169,20 @@
       <xsl:attribute name="height">250</xsl:attribute>
       <xsl:attribute name="width">300</xsl:attribute>
 	  </img><br/>
+	</xsl:template>
+
+	<xsl:template match="color">
+		<xsl:choose>
+			<xsl:when test = ". = 'Red' and ../make = 'Toyota'">
+				<h1> The complex expression test is True! The sub-model is <xsl:value-of select="../subModel"/>. </h1>
+			</xsl:when>
+			<xsl:when test = ". = 'Silver' and ../make = 'Honda'">
+				<h1> The complex expression test is True! The sub-model is <xsl:value-of select="../subModel"/>. </h1>
+			</xsl:when>
+			<xsl:otherwise>
+				<h1> The complex expression test is False! But! The car is located on/in the <xsl:value-of select="../location"/>. </h1>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 </xsl:stylesheet>
