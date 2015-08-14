@@ -107,7 +107,7 @@
 					<div id="images">
 						<xsl:for-each select="cars/car">
 							<xsl:sort select="make" order="ascending" data-type="text"/>
-							<xsl:apply-templates select="logo"/>
+							<xsl:apply-templates select="make" mode="option"/>
 						</xsl:for-each>
 					</div>
 				</div>
@@ -165,6 +165,23 @@
 			<xsl:attribute name="src"><xsl:value-of select="../picture"/></xsl:attribute>
       <xsl:attribute name="height">300</xsl:attribute>
 	  </img><br/>
+	</xsl:template>
+
+	<xsl:template match="make" mode="option">
+		<xsl:choose>
+			<xsl:when test = ". = 'Tesla'">
+				<a>
+					<xsl:attribute name="href">http://www.<xsl:value-of select="translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>motors.com</xsl:attribute>
+					<xsl:apply-templates select="../logo"/>
+				</a>
+			</xsl:when>
+			<xsl:otherwise>
+				<a>
+					<xsl:attribute name="href">http://www.<xsl:value-of select="translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')"/>.com</xsl:attribute>
+					<xsl:apply-templates select="../logo"/>
+				</a>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 
 	<xsl:template match="logo">
