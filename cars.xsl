@@ -128,7 +128,7 @@
 				<div style="border: 2px solid green; border-radius: 5px; padding: 10px; background-color: rgb(232, 252, 252);">
 					<xsl:for-each select="cars/car">
 						<xsl:sort select="make" order="ascending" data-type="text"/>
-						<xsl:apply-templates select="color"/>
+						<xsl:apply-templates select="make" mode="custom"/>
 					</xsl:for-each>
 				</div>
 
@@ -175,16 +175,16 @@
 	  </img><br/>
 	</xsl:template>
 
-	<xsl:template match="color">
+	<xsl:template match="make" mode="custom">
 		<xsl:choose>
-			<xsl:when test = ". = 'Red' and ../make = 'Toyota'">
-				<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="../make"/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>
+			<xsl:when test = "../color = 'Red' and . = 'Toyota'">
+				<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="."/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>
 			</xsl:when>
-			<xsl:when test = ". = 'Silver' and ../make = 'Honda'">
-				<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="../make"/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>
+			<xsl:when test = "../color = 'Silver' and . = 'Honda'">
+				<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="."/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>
 			</xsl:when>
 			<xsl:otherwise>
-				<h1> The complex expression test is False! But! The <xsl:value-of select="../make"/> is located on/in the <xsl:value-of select="../location"/>. </h1>
+				<h1> The complex expression test is False! But! The <xsl:value-of select="."/> is located on/in the <xsl:value-of select="../location"/>. </h1>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
