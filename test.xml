@@ -2,7 +2,7 @@
 
 <?xml-stylesheet type="text/xsl" href="cars.xsl" ?>
 
-<cars>
+<cars xmlns="http://www.kenguie.com/ns/cars/1.0">
 	<car>
 		<make>Honda</make>
 		<logo>http://www.carpict.website/wp-content/uploads/2015/07/honda-logo-png-white-urejmloe0.png</logo>
