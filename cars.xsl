@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 
 	<xsl:output method="html"/>
 
@@ -193,6 +193,17 @@
 	</xsl:template>
 
 	<xsl:template match="make" mode="custom">
+		<!-- <xsl:value-of select="
+
+    if (../color = 'Red' and . = 'Toyota')
+		then (
+			<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="."/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>
+		)
+		if (../color = 'Silver' and . = 'Honda')
+		then (<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="."/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>)
+		else (<h1> The complex expression test is False! But! The <xsl:value-of select="."/> is located on/in the <xsl:value-of select="../location"/>. </h1>)
+  
+  	"/> -->
 		<xsl:choose>
 			<xsl:when test = "../color = 'Red' and . = 'Toyota'">
 				<h1> The complex expression test is True! The sub-model of the <xsl:value-of select="."/> is <span class="highlight"><xsl:value-of select="../subModel"/></span>. </h1>
